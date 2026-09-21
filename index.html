@@ -8,18 +8,90 @@
     
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">    
 </head>
 <body>
     <header>
         <!-- 1. Navbar starts -->
         <nav>
-            
+            <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown" md:hidden>
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul
+                    tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <li><a>Home</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+                </div>
+                <img src="images/logo.webp" alt="" class="mx-2 ">
+                <p class="font-bold text-2xl">Peddy</p>
+                
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>Contact</a></li>            
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <img src="https://img.icons8.com/?size=100&id=7820&format=png" alt="" class="w-10">
+            </div>
+            </div>            
 
         </nav>
         <!-- 1. Navbar ends -->
     </header>
     <main>
-        <h3>hi</h3>
+        <!-- banner section starts -->
+        <div class="banner-section  flex flex-col justify-center my-4">
+            <!-- text container -->
+            <div class="text container flex flex-col item-center text-center  lg:gap-y-2">
+                <p class="text-gray-500  font-bold">Bringing Families Together ❤️‍🔥 </p>
+                <h1 class="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">Your Path to Adoption <br> Starts Here</h1>
+                <h5 class="text-sm">Pets are so cute and funny. We can play with them , spend time and go to walk with them . A pet <br>  is a domesticated or tamed animal kept for companionship, pleasure, and emotional support, rather than <br>  for utility, work, or food</h5>
+            </div>
+            <!-- Button container -->
+            <div class="mx-auto my-8">
+                <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-success">View More</button>
+
+            </div>
+            <!-- image container -->
+            <div>
+                <img src="images/pet.webp" alt="" class="mx-auto w-2/3 h-auto" >
+            </div>
+        </div>
+        <!-- banner section ends -->
+         <!-- adopt section starts -->
+          <div>
+            <!-- text container -->
+            <div></div>
+            <!-- category container -->
+            <div></div>
+            <!-- deal container -->
+            <div></div>
+            <!-- card container -->
+            <div></div>
+          </div>
+         <!-- adopt section ends -->
     </main>
     <footer>
 
