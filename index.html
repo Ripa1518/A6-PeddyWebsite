@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -71,7 +71,8 @@
             </div>
             <!-- Button container -->
             <div class="mx-auto my-8">
-                <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-success">View More</button>
+                <!-- <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-success" ><a href="#adopt">View More</a></button> -->
+                 <a  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-success text-white" href="#adopt">View More</a>
 
             </div>
             <!-- image container -->
@@ -81,7 +82,7 @@
         </div>
         <!-- banner section ends -->
          <!-- adopt section starts -->
-          <div class="flex flex-col gap-y-4">
+          <div id="adopt" class="flex flex-col gap-y-4">
             <!-- text container -->
             <div class="flex flex-col text-center gap-y-4">
                 <h3 class="text-3xl font-bold">Adopt  Your  Best Friend</h3>
@@ -106,6 +107,21 @@
             </div>
           </div>
          <!-- adopt section ends -->
+          <!-- modal -->
+           <!-- Open the modal using ID.showModal() method -->
+            <button id="modalBtn" class="btn hidden " onclick="customModal.showModal()">open modal</button>
+            <dialog id="customModal" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box  border border-pink-500">
+                <div id="modal-content" class="flex flex-col gap-y-4">
+                 </div>   
+                <div class="">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn w-full  border border-pink-500 text-blue-300 my-4">Cancel</button>
+                </form>
+                </div>
+            
+            </dialog>
     </main>
     <footer>
 

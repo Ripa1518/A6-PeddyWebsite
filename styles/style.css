@@ -9,3 +9,11 @@ header , main{
 body {
     font-family: "Lato", sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+.active{
+    background-color: cornflowerblue !important;
+    border-radius: 30px !important;
+}
