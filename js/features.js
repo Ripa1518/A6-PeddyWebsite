@@ -78,8 +78,8 @@ const showcategories = (categories) =>{
         // div.classList.add ( );
         div.innerHTML = 
         `
-        <button id="btn-${category.category}" onclick="loadPetByCateg('${category.category}')" class="btn btn-outline border border-pink-400 w-32 lg:w-56 p-2 h-auto category-btn ">
-        <img src="${category.category_icon}" class="w-10">
+        <button id="btn-${category.category}" onclick="loadPetByCateg('${category.category}')" class="btn btn-outline border border-pink-400 w-32 lg:w-56 p-2  category-btn btn-success ">
+        <img src="${category.category_icon}" class="w-8">
         <p class="font-bold text-xl"> ${category.category}</p>
         </button>
 
@@ -144,12 +144,12 @@ const showAllPets = (pets) =>{
                 <p>Price : ${pet.price? pet.price + '$' : 'Not Available'}</p>
                 <div class=" flex item-center justify-between gap-2">
                 
-                <button onclick="likeRecord('${pet.image}')"  class="btn btn-outline w-1/3 ">
+                <button onclick="likeRecord('${pet.image}')"  class="btn btn-outline w-1/3 btn-success  ">
                 <img class="w-8 md:w-12 " src="https://img.icons8.com/?size=96&id=SkbzwdwhI2sy&format=png">
                 </button>
                
-                <button class="btn  btn-outline w-1/3 ">Adopt</button>
-                <button onclick="loadDetails(${pet.petId})" class="btn  btn-outline  w-1/3">Details</button>
+                <button class="btn  btn-outline w-1/3 btn-success ">Adopt</button>
+                <button onclick="loadDetails(${pet.petId})  " class="btn  btn-outline  w-1/3 btn-success ">Details</button>
                 
                 </div>
             </div>
