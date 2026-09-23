@@ -104,7 +104,7 @@ const showAllPets = (pets) =>{
     const cardContainer = document.getElementById('card-container');
     cardContainer.innerHTML ='';
 
-    cardContainer.classList.add('grid', 'grid-cols-2', 'md:grid-cols-4','gap-4', 'items-start');
+    cardContainer.classList.add('grid' , 'grid-cols-1', 'sm:grid-cols-2', 'md:grid-cols-4','gap-4', 'items-start');
         const divLeftContainer = document.createElement('div');
         const divRightContainer = document.createElement('div');
         // divRightContainer.classList.add( 'h-full')
