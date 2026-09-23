@@ -70,7 +70,7 @@ const showDetails = (petData) =>{
 const showcategories = (categories) =>{
     console.log(categories)
     const categoryContainer = document.getElementById('category-container'); 
-    categoryContainer.classList.add('flex' , 'justify-between' )    
+    categoryContainer.classList.add('grid' , 'grid-cols-2', 'md:flex' , 'md:justify-between' ,'gap-4', )    
 
     for(const category of categories){
 
@@ -78,7 +78,7 @@ const showcategories = (categories) =>{
         // div.classList.add ( );
         div.innerHTML = 
         `
-        <button id="btn-${category.category}" onclick="loadPetByCateg('${category.category}')" class="btn btn-outline border border-pink-400 sm:w-32 lg:w-56 p-2 h-auto category-btn ">
+        <button id="btn-${category.category}" onclick="loadPetByCateg('${category.category}')" class="btn btn-outline border border-pink-400 w-32 lg:w-56 p-2 h-auto category-btn ">
         <img src="${category.category_icon}" class="w-10">
         <p class="font-bold text-xl"> ${category.category}</p>
         </button>
